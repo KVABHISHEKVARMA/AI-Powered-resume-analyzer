@@ -1,40 +1,41 @@
-AI-Powered Resume Analyzer
-Project Summary
-This project analyzes resume data to predict candidate suitability and performance using machine learning models. It assists in automating resume screening and extracting actionable insights to enhance recruitment decisions.
+# AI-Powered Resume Analyzer
 
-Objectives
-Extract and preprocess features from resumes systematically.
+## Project Summary
 
-Predict candidate job fit using classification models.
+This project analyzes resume data to **predict candidate suitability and performance using machine learning models**. It automates resume screening and extracts actionable insights to enhance recruitment decisions.
 
-Compare model performance across KNN and Random Forest.
+## Objectives
 
-Provide insights to assist recruiters in data-driven decision-making.
+- Extract and preprocess features from resumes systematically.
+- Predict candidate job fit using classification models.
+- Compare model performance across **KNN** and **Random Forest**.
+- Provide insights to assist recruiters in data-driven decision-making.
 
-Approach
-Supervised classification with categorical and numerical resume features.
+## Approach
 
-Applied label encoding, standardization, and correlation analysis for feature selection.
+- Supervised classification using categorical and numerical resume features.
+- Applied **label encoding, standardization, and correlation analysis** for feature selection.
+- Trained models:
+  - **K-Nearest Neighbors (KNN)**
+  - **Random Forest Classifier**
+- Evaluated models using **accuracy, F1-score, and runtime** to identify the most effective approach for resume analysis.
 
-Trained models: K-Nearest Neighbors (KNN) and Random Forest Classifier.
+## Results
 
-Evaluated models using accuracy, F1-score, and runtime to identify the most effective approach for resume analysis.
+- **Random Forest:** ~92% accuracy (best model).
+- **K-Nearest Neighbors (KNN):** ~88% accuracy.
 
-Results
-Random Forest: ~92% accuracy (best model).
+## Insights
 
-K-Nearest Neighbors (KNN): ~88% accuracy.
+- Skills match, years of experience, and recent relevant roles strongly influence suitability predictions.
+- Random Forest demonstrated higher stability across multiple feature subsets compared to KNN.
 
-Insights
-Skills match, years of experience, and recent relevant roles strongly influence suitability predictions.
+## Recommendations
 
-Random Forest demonstrated higher stability across multiple feature subsets compared to KNN.
+- Use **Random Forest** for primary resume suitability predictions due to its higher accuracy and feature handling robustness.
+- Integrate resume preprocessing pipelines for consistent feature extraction.
+- Periodically retrain models with new data to adapt to evolving hiring trends.
 
-Recommendations
-Use Random Forest for primary resume suitability predictions due to its higher accuracy and feature handling robustness.
+---
 
-Integrate resume preprocessing pipelines for consistent feature extraction.
-
-Periodically retrain models with new data to adapt to evolving hiring trends.
-
-This project enables efficient and accurate resume analysis using machine learning to improve recruitment workflows.
+This project enables **efficient and accurate resume analysis using machine learning** to improve recruitment workflows.
